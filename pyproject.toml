@@ -1,0 +1,8 @@
+[build-system]
+requires=[]
+build-backend="setuptools.build_meta"
+[project]
+name="autumn_poison"
+version="0.1.0"
+description="秋季误采处置协同服务"
+requires-python=">=3.10"
