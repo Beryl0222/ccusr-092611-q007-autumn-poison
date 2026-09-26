@@ -6,8 +6,10 @@
 
 - src/autumn_poison/domain.py：领域对象与时间约定。
 - src/autumn_poison/service.py：事务、状态迁移、权限和幂等边界。
-- src/autumn_poison/api.py：本地 HTTP 接口。
-- tests/：状态、版本、权限和重复请求测试。
+- src/autumn_poison/incident.py：中毒事件规则（样本、接触途径、高危症状与假愈期判定）。
+- src/autumn_poison/incident_service.py：报案受理、症状时间线、医疗交接、合并回滚、自动升级与值班还原。
+- src/autumn_poison/api.py：本地 HTTP 接口（角色经 X-Actor-Id / X-Actor-Role 头传入）。
+- tests/：状态、版本、权限、重复请求与中毒事件测试。
 
 ## 测试
 
